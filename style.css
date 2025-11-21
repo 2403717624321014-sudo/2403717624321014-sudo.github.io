@@ -228,4 +228,38 @@ footer {
     background: linear-gradient(135deg, #1e90ff, #00bfff, #87cefa, #add8e6);
     color: white;
 }
+/* Skills Section - Unique Gradient */
+.skills {
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Purple to Cyan */
+    color: white;
+    padding: 25px 30px;
+    margin: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    border-left: 5px solid #fff; /* white border for contrast */
+    padding-left: 12px;
+}
+
+.skills ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.skills li {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+/* Hover effect */
+.skills:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
 
