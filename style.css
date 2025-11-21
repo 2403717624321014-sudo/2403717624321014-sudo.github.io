@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,6 +27,7 @@ ul {
     list-style-type: square;
 }
 
+/* Project Cards */
 .project-card {
     background: white;
     padding: 15px;
@@ -34,6 +36,7 @@ ul {
     box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Footer */
 footer {
     background: #1a73e8;
     color: white;
@@ -42,6 +45,7 @@ footer {
     margin-top: 20px;
 }
 
+/* Certifications and POR Sections */
 .certifications, .por {
     background: white;
     padding: 25px 30px;
@@ -67,7 +71,7 @@ footer {
     font-size: 1.1rem;
 }
 
-/* Intro Card (no photo) */
+/* Intro Card (No Photo) */
 .intro-card {
     background: white;
     margin: 30px auto;
@@ -78,9 +82,20 @@ footer {
     align-items: center;
     gap: 25px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
     animation: fadeIn 1.2s ease-in-out;
 }
 
+.intro-card:hover {
+    box-shadow: 0 0 20px rgba(26, 115, 232, 0.6), 
+                0 0 40px rgba(26, 115, 232, 0.4),
+                0 0 60px rgba(26, 115, 232, 0.2);
+    border: 2px solid #1a73e8;
+    transform: translateY(-5px);
+}
+
+/* Intro Text */
 .intro-text h2 {
     margin: 0;
     font-size: 2rem;
@@ -121,25 +136,11 @@ footer {
     background-size: 300%;
 }
 
-/* Smooth gradient animation */
 @keyframes gradientMove {
-    0% { background-position: 0% }
-    50% { background-position: 100% }
-    100% { background-position: 0% }
+    0% { background-position: 0%; }
+    50% { background-position: 100%; }
+    100% { background-position: 0%; }
 }
 
-/* Glowing border for intro card */
-.intro-card {
-    position: relative;
-    transition: 0.4s ease;
-}
-
-.intro-card:hover {
-    box-shadow: 0 0 20px rgba(26, 115, 232, 0.6), 
-                0 0 40px rgba(26, 115, 232, 0.4),
-                0 0 60px rgba(26, 115, 232, 0.2);
-    border: 2px solid #1a73e8;
-    transform: translateY(-5px);
-}
 
 
