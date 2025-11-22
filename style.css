@@ -12,6 +12,9 @@ header {
     padding: 30px;
     text-align: center;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 h2 {
@@ -49,15 +52,6 @@ a:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     background: linear-gradient(135deg, #ff4b2b, #ff416c, #ffbf00, #1a73e8, #00c6ff, #7d2ae8, #7d2ae8);
     color: white;
-}
-
-/* Footer */
-footer {
-    background: #1a73e8;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }
 
 /* Certifications and POR Sections */
@@ -262,14 +256,6 @@ footer {
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 /* Trainings & Development Section */
-.trainings {
-    background: white;
-    padding: 25px 30px;
-    margin: 20px 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
 .trainings h2 {
     margin-bottom: 15px;
     font-size: 1.6rem;
@@ -310,13 +296,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Sticky Navigation Bar */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -325,10 +305,5 @@ footer {
   margin-top: 30px;
 }
 
-/* Hover Glow Effect to Cards */
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(0, 150, 255, 0.5);
-}
 
 
